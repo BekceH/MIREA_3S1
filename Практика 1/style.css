@@ -1,0 +1,436 @@
+/* Глобальный шрифт */
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Кнопка Sign Up */
+.btn-outline-danger {
+    border-width: 2px;
+    border-radius: 30px;
+    /* Закругленные края */
+    font-weight: 600;
+    color: #DC3545;
+    /* Красный текст по умолчанию */
+    background-color: transparent;
+    /* Прозрачный фон */
+    transition: all 0.3s ease;
+    /* Плавный переход */
+}
+
+.btn-outline-danger:hover {
+    background-color: #DC3545;
+    /* Красный фон при наведении */
+    color: #fff !important;
+    /* Белый текст при наведении */
+}
+
+
+/* Кнопка Sign In */
+.text-dark {
+    color: #0B132A !important;
+    /* Глубокий синий текст */
+}
+
+.hero {
+    background-color: #F8F9FA;
+    /* Светлый фон */
+}
+
+.hero-text h1 {
+    line-height: 1.3;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    max-width: 450px;
+}
+
+/* Стили для кнопки Get Started */
+.btn-custom {
+    background-color: #F53838;
+    /* Красный цвет фона */
+    color: #fff;
+    /* Белый текст */
+    font-weight: 600;
+    /* Полужирный текст */
+    border-radius: 10px;
+    /* Мягкое закругление */
+    padding: 10px 20px;
+    /* Отступы внутри кнопки */
+    box-shadow: 0px 10px 20px rgba(245, 56, 56, 0.3);
+    /* Мягкая тень */
+    transition: all 0.3s ease;
+    /* Плавный переход */
+    text-decoration: none;
+    /* Убираем подчеркивание */
+}
+
+.btn-custom:hover {
+    background-color: #D92E2E;
+    /* Более темный красный при наведении */
+    box-shadow: 0px 10px 25px rgba(245, 56, 56, 0.5);
+    /* Увеличенная тень при наведении */
+    transform: translateY(-2px);
+    /* Легкое поднятие при наведении */
+}
+
+.hero-image img {
+    animation: float 3s ease-in-out infinite;
+    /* Эффект плавного движения изображения */
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.features {
+    background-color: #fff;
+    /* Белый фон */
+}
+
+.features-text h2 {
+    line-height: 1.4;
+    font-size: 2rem;
+    /* Размер заголовка */
+}
+
+.features-text p {
+    font-size: 1.1rem;
+    max-width: 450px;
+}
+
+.features-image img {
+    animation: float 3s ease-in-out infinite;
+    /* Эффект плавания для иллюстрации */
+}
+
+.features ul li span {
+    font-size: 1rem;
+    color: #4F5665;
+    /* Цвет текста в списке */
+}
+
+/* Секция Pricing */
+.pricing {
+    background-color: #F8F9FA;
+}
+
+.pricing h2 {
+    font-size: 2rem;
+    color: #0B132A;
+}
+
+.pricing p {
+    font-size: 1rem;
+    color: #6C757D;
+}
+
+/* Карточки */
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid #DDDDDD;
+    padding: 20px;
+    min-height: 550px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.pricing-card.selected {
+    border-color: #F53838 !important;
+    /* Красный бордер при выборе */
+    box-shadow: 0px 10px 20px rgba(245, 56, 56, 0.3);
+}
+
+/* Убираем стандартный outline при клике */
+.pricing-card:focus,
+.pricing-card button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Кнопки */
+.pricing-card button {
+    border: 2px solid #F53838;
+    color: #F53838;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.pricing-card button:hover {
+    background-color: #F53838;
+    color: #fff;
+}
+
+/* Список внутри карточек */
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Выровнять элементы внутри списка */
+.pricing-card ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Секция Network */
+.network {
+    background-color: #FFFFFF;
+}
+
+.network h2 {
+    font-size: 2rem;
+    color: #0B132A;
+}
+
+.network p {
+    font-size: 1rem;
+    color: #6C757D;
+}
+
+/* Карта */
+.map {
+    position: relative;
+    display: inline-block;
+}
+
+.location-point {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #F53838;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+}
+
+/* Логотипы партнеров */
+.partners img {
+    max-width: 100%;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.partners img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Секция Testimonials */
+.testimonials h2 {
+    font-size: 2rem;
+    color: #0B132A;
+  }
+  
+  .testimonials p {
+    font-size: 1rem;
+    color: #6C757D;
+  }
+  
+  /* Слайдер */
+  .carousel-container {
+    display: flex;
+    overflow: hidden; /* Убираем горизонтальный скролл */
+    scroll-behavior: smooth;
+  }
+  
+  .carousel-container > .card {
+    flex: 1 0 calc(100% / 3); /* Каждая карточка занимает треть доступного пространства */
+    max-width: calc(100% / 3); /* Ограничиваем ширину карточки */
+    margin: 0 10px; /* Отступ между карточками */
+    border: 2px solid #DDE1E7; /* Серый бордер по умолчанию */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-container > .card:hover {
+    border-color: #F53838; /* Красный бордер при наведении */
+    box-shadow: 0px 10px 20px rgba(245, 56, 56, 0.3);
+  }
+  
+  /* Пагинация */
+  .pagination-dots {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .pagination-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #DDE1E7;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .pagination-dots .dot.active {
+    width: 20px; /* Превращаем в прямоугольник */
+    height: 10px;
+    background-color: #F53838;
+    border-radius: 15px; /* Закруглённые края */
+  }
+  
+  /* Кнопки пагинации */
+  .btn-pagination {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  /* Секция подписки */
+.subscribe {
+    background-color: #FFFFFF;
+  }
+  
+  .subscribe h2 {
+    font-size: 2rem;
+    color: #0B132A;
+  }
+  
+  .subscribe p {
+    font-size: 1rem;
+    color: #6C757D;
+  }
+  
+/* Общий фон секции */
+.subscribe {
+    background-color: #F8F9FA; /* Светло-серый фон */
+  }
+  
+  /* Белая область с текстом и кнопкой */
+  .subscribe .bg-white {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Текст */
+  .subscribe h2 {
+    font-size: 2rem;
+    color: #0B132A;
+  }
+  
+  .subscribe p {
+    font-size: 1rem;
+    color: #6C757D;
+  }
+  
+  /* Кнопка подписки */
+  .subscribe .btn {
+    background-color: #F53838;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .subscribe .btn:hover {
+    background-color: #C72A2A;
+  }
+  
+  .subscribe .btn.shadow {
+    box-shadow: 0px 10px 20px rgba(245, 56, 56, 0.4);
+  }
+
+/* Футер */
+.footer {
+    background-color: #F8F9FA; /* Светло-серый фон */
+    color: #0B132A; /* Тёмный текст */
+  }
+  
+  .footer h5, .footer h6 {
+    font-size: 1.2rem;
+  }
+  
+  .footer a {
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #F53838;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+    color: #6C757D;
+  }
+  
+  .footer .d-flex a img {
+    transition: transform 0.3s ease;
+  }
+  
+  .footer .d-flex a img:hover {
+    transform: scale(1.1);
+  }
+
+/* Контейнер */
+.section-container {
+    background-color: #FFFFFF; /* Белый фон */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 25px 50px; /* Внутренние отступы */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Вертикальная линия */
+.vertical-line {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 1px;
+    background-color: #DDE1E7; /* Светло-серый цвет */
+}
+
+/* Центрирование иконок */
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FEE2E2; /* Светло-красный фон */
+}
+
+/* Изображения */
+.icon-circle img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Горизонтальное выравнивание */
+.row {
+    justify-content: center; /* Центровка блоков */
+}
+
+/* Текст */
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #6C757D;
+}
+
+  
+  
+
+  
+  
+  
+  
